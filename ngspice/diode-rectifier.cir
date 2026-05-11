@@ -1,0 +1,7 @@
+* Half wave rectifier
+V1 in 0 SIN(0 5 1k)
+D1 in out Dbreak
+R1 out 0 1k
+.model Dbreak D(Is=1e-14 N=1)
+.tran 0.01m 3m
+.end
