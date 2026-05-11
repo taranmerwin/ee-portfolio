@@ -1,0 +1,8 @@
+* NMOS switch
+M1 drain gate 0 0 NMOS W=10u L=1u
+V1 drain 0 DC 5
+Vgs gate 0 DC 0
+R1 drain drain_node 1k
+.model NMOS NMOS(VTO=0.7 KP=100u)
+.dc Vgs 0 3 0.1
+.end
